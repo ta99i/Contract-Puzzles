@@ -30,6 +30,7 @@ describe("Game5", function () {
       to: await wallet.getAddress(),
       value: ethers.utils.parseEther("2"),
     });
+
     await game.connect(wallet).win();
 
     // leave this assertion as-is
